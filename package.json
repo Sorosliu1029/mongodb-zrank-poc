@@ -1,0 +1,27 @@
+{
+  "name": "mongodb-zrank-poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc",
+    "start": "npm run compile && node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sorosliu1029/mongodb-zrank-poc.git"
+  },
+  "keywords": [],
+  "author": "Soros Liu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sorosliu1029/mongodb-zrank-poc/issues"
+  },
+  "homepage": "https://github.com/Sorosliu1029/mongodb-zrank-poc#readme",
+  "dependencies": {
+    "mongodb": "^4.2.2"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.4"
+  }
+}
