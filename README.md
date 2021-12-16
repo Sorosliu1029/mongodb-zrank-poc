@@ -28,10 +28,12 @@ Using MongoDB only, implement redis-like [zrank](https://redis.io/commands/zrank
 > node dist/index.js
 
 total docs: 100000
-zrank simple: u19137 = 97672
-zrank tricky: u19137 = 97675
+zrank simple: u10460 ranks at 86082
+zrank tricky: u10460 ranks at 86083
+
 run zrank simple 100 times
-zrank simple: 20.615 ms per run
+zrank simple: 19.089 ms per run
+
 run zrank tricky 100 times
-zrank tricky: 91.102 ms per run
+zrank tricky: 89.732 ms per run
 ```

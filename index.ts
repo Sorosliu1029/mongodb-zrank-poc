@@ -80,7 +80,7 @@ async function zrankTricky(
 async function benchmark(coll: Collection<UserScore>) {
   const benchCount = 100
   {
-    console.log(`run zrank simple ${benchCount} times`)
+    console.log(`\nrun zrank simple ${benchCount} times`)
     const start = performance.now()
     for (let i = 0; i < benchCount; i++) {
       const u = getRandomUser()
@@ -93,7 +93,7 @@ async function benchmark(coll: Collection<UserScore>) {
   }
 
   {
-    console.log(`run zrank tricky ${benchCount} times`)
+    console.log(`\nrun zrank tricky ${benchCount} times`)
     const start = performance.now()
     for (let i = 0; i < benchCount; i++) {
       const u = getRandomUser()
@@ -118,10 +118,10 @@ async function run() {
     const u = getRandomUser()
 
     const rank1 = await zrankSimple(zrank, u)
-    console.log(`zrank simple: ${u} = ${rank1}`)
+    console.log(`zrank simple: ${u} ranks at ${rank1}`)
 
     const rank2 = await zrankTricky(zrank, u)
-    console.log(`zrank tricky: ${u} = ${rank2}`)
+    console.log(`zrank tricky: ${u} ranks at ${rank2}`)
 
     await benchmark(zrank)
   } finally {
