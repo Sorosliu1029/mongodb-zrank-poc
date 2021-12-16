@@ -4,7 +4,7 @@ Using MongoDB only, implement redis-like [zrank](https://redis.io/commands/zrank
 
 ## Collection structure
 
-```json
+```js
 {
   u: string, // user id
   s: number, // score
